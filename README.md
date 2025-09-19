@@ -1,6 +1,6 @@
 # 🥥 Automated Coconut Sorting System  
 
-An **AI-powered Coconut Sorting System** that automates coconut grading in two stages:  
+An **ML-powered Coconut Sorting System** that automates coconut grading in two stages:  
 
 1. **CNN-based Crack Detection** → Detects if a coconut is **Cracked ❌** or **Healthy ✅**  
 2. **Random Forest Classification** → For Healthy coconuts, predicts **Low / Medium / High** maturity & weight classes  
@@ -60,3 +60,4 @@ streamlit run app.py
 
 
    
+
