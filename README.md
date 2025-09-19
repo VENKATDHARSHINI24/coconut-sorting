@@ -1,57 +1,57 @@
 # 🥥 Automated Coconut Sorting System  
 
-An **ML-powered Coconut Sorting System** that automates coconut grading in two stages:  
+An **AI-powered Coconut Sorting System** that automates coconut grading in two stages:  
 
-1. **CNN-based Crack Detection** → Detects if a coconut is **Cracked ❌** or **Healthy ✅**  
-2. **Random Forest Classification** → For Healthy coconuts, predicts **Low / Medium / High** maturity & weight classes  
+1. **CNN-based Crack Detection** → Identifies whether a coconut is **Cracked ❌** or **Healthy ✅**  
+2. **Random Forest Classification** → For healthy coconuts, predicts **Low / Medium / High** maturity and weight classes  
 
 ---
 
 ## 🚀 Features  
-- ✅ Crack detection using **CNN**  
+- ✅ Crack detection using **CNN (Convolutional Neural Networks)**  
 - ✅ Weight & maturity classification using **Random Forest**  
-- ✅ Extracts **size, shape, texture** features for prediction  
+- ✅ Extracts **size, shape, and texture** features for classification  
 - ✅ Cracked coconuts are automatically rejected  
-- ✅ Real-time ready with **OpenCV**  
+- ✅ Real-time ready with **OpenCV** integration  
 
 ---
 
 ## 🛠️ Tech Stack  
 - **Python**  
-- **TensorFlow/Keras** → CNN model  
+- **TensorFlow / Keras** → CNN model for crack detection  
 - **Scikit-learn** → Random Forest classifier  
-- **OpenCV** → Image preprocessing  
-- **NumPy, Pandas** → Data handling  
-- **Matplotlib** → Visualization  
+- **OpenCV** → Image preprocessing & feature extraction  
+- **Streamlit** → Web-based UI  
 
 ---
-## 📂 Workflow 
 
-      ┌─────────────┐
-      │  Input Img  │
-      └──────┬──────┘
-             │
-     ┌───────▼────────┐
-     │   CNN Model    │
-     │ Crack Detection│
-     └───────┬────────┘
- Cracked ❌   │   Healthy ✅
+📂 Workflow
+       ┌─────────────┐
+       │  Input Img  │
+       └──────┬──────┘
               │
-      ┌───────▼─────────┐
-      │ Feature Extract │
-      │ (size, texture) │
-      └───────┬─────────┘
-              │
-      ┌───────▼─────────┐
-      │ Random Forest   │
-      │ Weight & Maturity│
-      └───────┬─────────┘
- Low ⚪   Medium 🟡   High 🟢
-              │
-      ┌───────▼─────────┐
-      │  Streamlit UI   │
-      │  Final Output   │
-      └─────────────────┘
+      ┌───────▼────────┐
+      │   CNN Model    │
+      │ Crack Detection│
+      └───────┬────────┘
+   Cracked ❌   │   Healthy ✅
+                │
+       ┌────────▼─────────┐
+       │ Feature Extract  │
+       │ (size, texture)  │
+       └────────┬─────────┘
+                │
+       ┌────────▼─────────┐
+       │ Random Forest    │
+       │ Weight & Maturity│
+       └───────┬──────────┘
+   Low ⚪   Medium 🟡   High 🟢
+                │
+       ┌────────▼─────────┐
+       │   Streamlit UI   │
+       │   Final Output   │
+       └──────────────────┘
+
 # Install dependencies
 pip install -r requirements.txt
 
@@ -60,4 +60,5 @@ streamlit run app.py
 
 
    
+
 
